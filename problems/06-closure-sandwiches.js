@@ -18,12 +18,12 @@ sandwich2("pb") // => "One sandwich with tomato and pb"
 ***********************************************************************/
 
 const sandwichMaker = function(){
-  let string = 'tomato';
+  let string = 'One sandwich with tomato';
   let inside = function(word){
-    string += ' and ' + word;
+    return string += ' and ' + word;
 
   }
-    return inside;
+  return inside;
 
 }
 console.log(sandwichMaker);
