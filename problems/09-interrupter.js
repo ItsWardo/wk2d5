@@ -24,8 +24,7 @@ function interrupter(interruptingWord){
       let word = words[i];
       if(i === words.length -1){
         newString += word;
-      }
-      else{
+      } else{
         newString += word + " " + interruptingWord + " ";
       }
     }

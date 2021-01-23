@@ -31,10 +31,10 @@ Example 4:
 let countDownTimer = function(n){
   if (n === 0) return 'Happy New Year!';  
   n--;
-  return function(){
+  return function inner(){
     if (n === 0) return 'Happy New Year!';
     n--;
-    
+    return inner;
   }
   
 }
